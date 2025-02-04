@@ -10,9 +10,8 @@ This project is a flight deals notification program. It fetches flight data from
 2. [Technologies Used](#technologies-used)
 3. [Setup and Installation](#setup-and-installation)
 4. [Environment Variables](#environment-variables)
-5. [File Overview](#file-overview)
-6. [Usage](#usage)
-7. [Future Enhancements](#future-enhancements)
+5. [Usage](#usage)
+6. [Future Enhancements](#future-enhancements)
 
 ---
 
