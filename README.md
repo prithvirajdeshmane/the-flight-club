@@ -39,7 +39,7 @@ This project is a flight deals notification program. It fetches flight data from
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/the-flight-club.git
+    git clone https://github.com/prithvirajdeshmane/the-flight-club.git
     cd the-flight-club
     ```
 
@@ -73,34 +73,6 @@ The program relies on several environment variables to connect with external ser
 - **Sheety API**:
   - `SHEETY_FLIGHTDEALS_URL`: URL of the Sheety API endpoint.
   - `SHEETY_BEARER_TOKEN`: Bearer token for Sheety API authentication.
-
----
-
-## File Overview
-
-### 1. `main.py`
-- The entry point of the program. It:
-  - Reads destination data from Google Sheets.
-  - Reads user emails from Google Sheets.
-  - Ensures all destination cities have IATA codes.
-  - Searches for flights for each destination.
-    - First searches non-stop flights
-    - If none found, then searches for flights with layovers
-  - Sends email notifications to each user for flights below the threshold price.
-
-### 2. `flight_search.py`
-- Handles API calls to the Amadeus API to:
-  - Fetch city IATA codes.
-  - Search for flight offers.
-
-### 3. `flight_data.py`
-- Processes flight data and identifies the cheapest flight.
-
-### 4. `notification_manager.py`
-- Sends email notiications to each email in list using SMTP.
-
-### 5. `data_manager.py`
-- Handles interaction with Google Sheets via the Sheety API.
 
 ---
 
